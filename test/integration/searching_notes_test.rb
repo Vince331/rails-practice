@@ -5,6 +5,7 @@ class SearchingNotesTest < ActionDispatch::IntegrationTest
   page.visit "/"
    # i go to "/"
    # and I see a form that asks me to serach my notes
+   assert_match /form/, page.body
    # I enter an array
    # i submit the form
    # my url says "/notes?query=arr"
