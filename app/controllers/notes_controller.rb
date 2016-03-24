@@ -1,7 +1,6 @@
 class NotesController < ApplicationController
-  def search
+#  def search
 
-    require "pry"
-    binding.pry
-  end
+
+ # end
 end
