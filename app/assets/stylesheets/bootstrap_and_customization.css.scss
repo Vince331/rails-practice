@@ -1,0 +1,19 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,700);
+
+//$body-bg: red;
+$font-family-sans-serif:           'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+//$navbar-default-bg: ;
+//$navbar-default-bg: #9b59b6;
+$navbar-default-link-color: #f1c40f;
+$button-color: #f1c40f;
+$jumbotron-bg: #f1c40f;
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+.center {
+  text-align: center;
+}
+
+.navbar-brand {
+  font-weight: bold;
+}

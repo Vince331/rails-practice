@@ -1,28 +1,34 @@
 <style>
 body  {
     background-image: url("http://reduct.bagwanpankaj.com/assets/img/post_it.jpg");
-    background-color: #cccccc;
+    /*background-color: #cccccc;*/
 }
 
 .formtext {
   margin: auto;
-  width: 60%;
-  padding: 10px;
+ /* width: 60%;
+ padding: 10px;
   margin-left: 500px;
   margin-right: 350px;
+  */
 }
 
 </style>
-<p>Sign up <%= link_to "here","#" %>.</p>
+<div class="jumbotron">
+<p><%= link_to "Sign Up","#", class: "btn btn-primary btn-lg" %>
+<%= link_to "Log In","#", class: "btn btn-default btn-lg" %></p>
   <title>SearchYourNotes</title>
 <body>
  <div class="formtext">
  <h2> Search your notes here! </h2>
  <p>(submit empty form to get all notes)</p>
  <form action='/search' method='GET'>
-           <input type='text' name='query'>
-           <p><input type='Submit'></p>
+           <input type='text' name='query'placeholder="Search..." >
+           <br>
+           <p>
+           <p><%= link_to "Submit","#", class: "btn btn-primary btn-lg" %></p>
            </form>
          </div>
+</div>
 
 </body>
